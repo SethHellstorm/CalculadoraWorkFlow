@@ -12,22 +12,22 @@ def mostrar_menu():
 
 
 def pedir_numeros():
-    a = float(input("Ingresa el primer número: "))
-    b = float(input("Ingresa el segundo número: "))
+    a = float(input("Ingresa el primer numero: "))
+    b = float(input("Ingresa el segundo numero: "))
     return a, b
 
 
 def main():
     while True:
         mostrar_menu()
-        opcion = input("Elige una opción (1-5): ").strip()
+        opcion = input("Elige una opcion (1-5): ").strip()
 
         if opcion == "5":
-            print("¡Hasta luego!")
+            print("Hasta luego!")
             break
 
         if opcion not in ("1", "2", "3", "4"):
-            print("Opción inválida. Intenta de nuevo.")
+            print("Opcion invalida. Intenta de nuevo.")
             continue
 
         a, b = pedir_numeros()
@@ -53,4 +53,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
